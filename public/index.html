@@ -1,89 +1,195 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/12.3.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/12.3.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/12.3.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/12.3.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/12.3.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/12.3.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/12.3.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/12.3.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/12.3.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/12.3.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <title>Veyona</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <h1>Veyona</h1>
+
+        <div class="navlinks">
+        <p class="navlink"><a href="index.html">Home</a></p>
+        <p class="navlink"><a href="collection.html">Collection</a></p>
+        <p class="navlink"><a href="contact.html">Contact</a></p>
+        </div>
+
+        <div class="menutoggle">
+        <i class="fa-solid fa-bars" onclick="clickhamburger()"></i>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    </nav>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <div class="sidenavbar">
+        <p style="color: white; padding-left: 90%; padding-top: 10px;">
+            <i class="fa-solid fa-xmark" onclick="xmark()"></i>
+        
+        </p>
+        <div class="sidenavlinks">
+            <p class="sidenavlink"><a href="index.html">Home</a></p>
+            <p class="sidenavlink"><a href="collection.html">Collection</a></p>
+            <p class="sidenavlink"><a href="contact.html">Contact</a></p>
+        </div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
+    </div>
+
+    <div class="header">
+
+        <div>
+            <h1>Step Into Style</h1>
+            <p>Redefining fashion with elegance and confidence.</p>
+            <button class="shopbutton">Shop Now</button>
+        </div>
+
+        <div>
+            <img class="headerimage" src="C:\Users\Sree Murugan S J\Desktop\Veyona E-Commerce\images\rayul-_M6gy9oHgII-unsplash.jpg" alt="" height="350" width="280">
+        </div>
+
+    </div>
+
+
+<div class="maincontainer">
+    <div class="container">
+        <div class="con1">
+            <h2>We Provide Best</h2>
+            <h2>Customer Experience</h2>
+            
+        </div>
+
+        <div class="con2">
+            <p>|| We promise that the Customer feels purity from our product.</p>
+        </div>
+    </div>
+</div>
+
+<div class="mainservicecontainer">
+        <div class="servicecontainer">
+            <div>
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h4>Fast Delivery</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odio cumque, blanditiis asperiores aborum soluta quod sed quo quasi veritatis rem in</p>
+  
+            </div>
+
+            <div>
+                    <i class="fa-solid fa-star"></i>
+                    <h4>Premium Quality</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odio cumque, blanditiis asperiores aborum soluta quod sed quo quasi veritatis rem in</p>
+            </div>
+
+            <div>
+                    <i class="fa-solid fa-rotate-left"></i>
+                    <h4>Easy Returns</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odio cumque, blanditiis asperiores aborum soluta quod sed quo quasi veritatis rem in?</p>
+            </div>
+        </div>
+</div>
+
+<div class="newarrivals">
+    <h2>New Arrivals</h2>
+</div>
+
+<div class="mainservicetwo">
+            <div class="servicetwo">
+                <div class="servicetwosub">
+                    <img src="C:\Users\Sree Murugan S J\Desktop\Veyona E-Commerce\images\shirt.jpg" alt="" height="200" width="200">
+                    <button>Buy Now <i class="fa-solid fa-arrow-right"></i></button>
+
+                </div>
+
+                <div class="servicetwosub">
+                    <img src="C:\Users\Sree Murugan S J\Desktop\Veyona E-Commerce\images\jeans.jpg" alt="" height="200" width="200">
+                    <button>Buy Now <i class="fa-solid fa-arrow-right"></i></button>
+
+                </div>
+
+                <div class="servicetwosub">
+                    <img src="C:\Users\Sree Murugan S J\Desktop\Veyona E-Commerce\images\shoe.jpg" alt="" height="200" width="200">
+                    <button>Buy Now <i class="fa-solid fa-arrow-right"></i></button>
+
+                </div>
+
+                <div class="servicetwosub">
+                    <img src="C:\Users\Sree Murugan S J\Desktop\Veyona E-Commerce\images\shorts.jpg" alt="" height="200" width="200">
+                    <button>Buy Now <i class="fa-solid fa-arrow-right"></i></button>
+
+                </div>
+
+               
+            </div>
+</div>
+
+<div class="newarrivals">
+    <h2>This Season Wanted</h2>
+</div>
+
+<div class="mainseason">
+            <div class="season">
+                <div class="seasonsub">
+                    <img src="C:\Users\Sree Murugan S J\Desktop\Veyona E-Commerce\images\hoodies.jpg" alt="" height="200" width="200">
+                    <button>Buy Now <i class="fa-solid fa-arrow-right"></i></button>
+
+                </div>
+
+                <div class="seasonsub">
+                    <img src="C:\Users\Sree Murugan S J\Desktop\Veyona E-Commerce\images\tshirt.jpg" alt="" height="200" width="200">
+                    <button>Buy Now <i class="fa-solid fa-arrow-right"></i></button>
+
+                </div>
+
+                <div class="seasonsub">
+                    <img src="C:\Users\Sree Murugan S J\Desktop\Veyona E-Commerce\images\socks.jpg" alt="" height="200" width="200">
+                    <button>Buy Now <i class="fa-solid fa-arrow-right"></i></button>
+
+                </div>
+
+                <div class="seasonsub">
+                    <img src="C:\Users\Sree Murugan S J\Desktop\Veyona E-Commerce\images\jacket.jpg" alt="" height="200" width="200">
+                    <button>Buy Now <i class="fa-solid fa-arrow-right"></i></button>
+
+                </div>
+
+               
+            </div>
+</div>
+
+<div class="joinletter">
+
+        <div class="joinletterstyle">
+            <h3>Join Our Newsletter</h3>
+            <p>Stay updated with the latest trends, exclusive offers, and new arrivals!</p>
+            <p>Subscribe now and be the first to know about special discounts and fashion updates delivered straight to your inbox.</p>
+            <input type="text" class="recborder" alt="">
+            <button class="subscribe">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+</div>
+
+
+        <div class="footer">
+            <div class="footercontainer">
+                <h2>Veyona</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem cumque obcaecati labore</p>
+                <div class="iconss">
+                <i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i>
+                <i class="fa-brands fa-facebook" style="color: rgb(255, 255, 255);"></i>
+                <i class="fa-brands fa-twitter" style="color: rgb(255, 255, 255);"></i>
+                </div>
+            </div>
+            <p>@2025 Veyona.com</p>
+        </div>
+        
+
+    <script src="script.js">
+
     </script>
-  </body>
+</body>
 </html>
