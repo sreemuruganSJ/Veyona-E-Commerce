@@ -1,16 +1,10 @@
 {
   "hosting": {
-    "public": ".",
+    "public": "deploy",
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**",
-      "*.log",
-      "*.tmp",
-      "*.pid",
-      "*.seed",
-      ".git/**",
-      "Thumbs.db"
+      "**/node_modules/**"
       
     ]
   }
