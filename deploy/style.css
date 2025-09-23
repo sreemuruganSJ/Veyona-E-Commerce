@@ -1,0 +1,362 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    height: 50px;
+}
+
+.navlinks{
+    display: flex;
+    column-gap: 20px;
+}
+
+.navlink a{
+    text-decoration: none;
+    color:#1d232c;
+    
+}
+
+.navlink a:hover{
+    text-decoration: underline;
+    color: #994ce7;
+}
+
+.menutoggle{
+    display: none;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    padding:50px;
+    margin-top: 20px;
+}
+
+.shopbutton{
+    background-color: black;
+    color: white;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+
+}
+
+.maincontainer{
+    padding: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainservicecontainer{
+    padding: 20px;
+}
+
+.servicecontainer{
+    display: flex;
+    gap: 25px;
+    margin-top: 60px;
+    
+}
+
+.servicecontainer div{
+    background-color: #e0d1ee;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.servicecontainer p{
+    text-align:left;
+}
+
+
+.mainservicetwo{
+    padding: 20px;
+}
+
+.servicetwo{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.newarrivals{
+    padding:20px;
+}
+
+.servicetwo button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background-color: #1d232c;
+    color:white;
+    position: relative;              /* Space between image and button */
+    top:-25%;
+    border: none;
+}
+
+.servicetwosub {
+  display: flex;
+  flex-direction: column; /* Stack image and button vertically */
+  align-items: center;    /* Center them horizontally */
+  gap: 10px;
+
+}
+
+.season{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.season button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background-color: #1d232c;
+    color:white;
+    position: relative;              /* Space between image and button */
+    top:-25%;
+    border: none;
+}
+
+.seasonsub {
+  display: flex;
+  flex-direction: column; /* Stack image and button vertically */
+  align-items: center;    /* Center them horizontally */
+  gap: 10px;
+
+}
+
+.recborder{
+    border: 3px solid #1d232c;
+    width: 70%;
+    height: 30px;
+    padding:5px;
+}
+
+.joinletter{
+    padding: 20px;
+}
+
+
+.joinletterstyle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.joinletterstyle button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1d232c;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    position: relative;
+    top:10px;
+}
+
+.joinletterstyle button:hover{
+    background-color: #994ce7;
+    color: #1d232c;
+    
+}
+
+
+.header h1{
+     color: #994ce7;
+}
+
+.footer{
+    background-color: #1d232c;
+    padding: 25px;
+    margin-top: 70px;
+    color: white;
+}
+
+.iconss{
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    font-size: xx-large;
+}
+
+.wholeproduct{
+
+    margin-top: 20px;
+}
+
+
+.productsearch{
+    width: 80%;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.twotag {
+    display: flex;
+    justify-content: space-between; /* pushes input left, icon right */
+    align-items: center;
+    width: 100%;
+}
+
+.twotag input{
+    width:100%;
+    padding :2px;
+    border: none;
+    background-color: transparent;
+}
+
+.twotag input:focus{
+    outline: none;
+}
+
+
+.mainproduct{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    
+}
+.eachproduct{
+    text-align: center;
+    flex-basis: 20%;
+    margin-top: 10px;
+}
+
+
+.contactpage{
+    background-color: #1d232c;
+    padding: 20px;
+    margin: 50px;
+    margin-left: 18%;
+    color: white;
+    border-radius: 20px;
+    width: 60%;
+
+
+}
+
+.subcontactpage{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding-left: 80px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+
+}
+
+.subcontactpage button{
+    margin-top: 15px;
+    width: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #104eeb;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.la input{
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+
+/* Media Query */
+
+@media screen and (max-width:600px){
+    .menutoggle{
+    display: block;
+    }
+    .navlinks{
+        display:none;
+    }
+    .headerimage{
+        display: none;
+    }
+    .con1{
+        display:none;
+    }
+    .con2{
+        display: none;
+    }
+    .servicecontainer{
+        flex-wrap: wrap;
+    }
+
+    .subcontactpage{
+        margin-left: -30px;
+    }
+}
+
+.sidenavbar{
+    background-color: #C68EFD;
+    width: 50%;
+    height: 100%;
+    position:fixed;
+    top:0;
+    left: -60%;
+    transition: 2s; 
+    
+}
+
+.sidenavlinks{
+    color: white;
+    padding: 20px;
+}
+
+.sidenavlink{
+    margin-bottom: 30px;
+}
+
+.sidenavlink a{
+    text-decoration: none;
+    color: white;
+}
+
+.sidenavlink a:hover{
+    text-decoration: underline;
+}
